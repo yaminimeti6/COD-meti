@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f4ec">
+  <title>Product · Slimofast</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="extra.css">
+  <link rel="stylesheet" href="product-theme.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <svg class="icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-box" viewBox="0 0 24 24">
+      <path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z" />
+      <path d="m4.3 7.6 7.7 4.3 7.7-4.3M12 12v9M8 5.3l8 4.5" />
+    </symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="3.5" />
+      <path d="M5 20a7 7 0 0 1 14 0Z" />
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <path
+        d="M7 3H4.8A1.8 1.8 0 0 0 3 4.9C3 13.8 10.2 21 19.1 21a1.9 1.9 0 0 0 1.9-1.8V17l-5-2-1.5 2a15 15 0 0 1-6.7-6.7l2-1.5-2-5Z" />
+    </symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24">
+      <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" />
+      <circle cx="12" cy="10" r="2.5" />
+    </symbol>
+  </svg>
+  <div class="topline">Trusted by 1,00,000+ Customers <span>🚚</span></div>
+  <header class="site-header"><a class="brand" href="index.html" aria-label="Slimofast home"><span
+        class="brand-mark">s</span> slimofast<span class="brand-dot">.</span></a><span class="header-note">A little
+      care, every day</span></header>
+  <main class="detail-main">
+    <a class="back-link" href="index.html">← Back to Home</a>
+    <section class="detail-layout">
+      <div class="detail-product">
+        <div class="detail-visual" id="detail-visual"></div>
+        <p class="detail-eyebrow">BEST SELLING WEIGHTLOSS PRODUCT</p>
+        <h1 id="detail-name"></h1>
+        <p class="rating" id="detail-rating"></p>
+      </div>
+      <section class="detail-order" aria-labelledby="cod-title">
+        <form class="order-card" id="order-form">
+          <div class="screenshot-form-heading">
+            <h2 id="cod-title">Cash On Delivery Form</h2>
+            <p>Write English Text Only</p>
+          </div>
+          <div class="course-picker" id="course-picker">
+            <span class="sr-only" id="course-label">Select course</span>
+            <button class="course-picker-trigger" id="course-trigger" type="button"
+              aria-labelledby="course-label course-selected" aria-haspopup="listbox" aria-expanded="false">
+              <span class="field-icon" aria-hidden="true"><svg>
+                  <use href="#icon-box" />
+                </svg></span>
+              <span class="course-selected" id="course-selected"></span>
+              <svg class="course-chevron" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            <div class="course-menu" id="course-menu" role="listbox" aria-labelledby="course-label" hidden></div>
+            <input type="hidden" name="course" id="course-value">
+          </div>
+          <div class="form-grid">
+            <label class="wide"><span class="sr-only">Full name</span><span class="field-icon" aria-hidden="true"><svg>
+                  <use href="#icon-user" />
+                </svg></span><input name="name" autocomplete="name" placeholder="Full name" required></label>
+            <label class="wide"><span class="sr-only">Phone number</span><span class="field-icon"
+                aria-hidden="true"><svg>
+                  <use href="#icon-phone" />
+                </svg></span><input name="phone" type="tel" inputmode="numeric" autocomplete="tel"
+                placeholder="Phone number" pattern="[6-9][0-9]{9}" maxlength="10" required></label>
+            <label class="wide"><span class="sr-only">House number, Village name</span><span class="field-icon"
+                aria-hidden="true"><svg>
+                  <use href="#icon-pin" />
+                </svg></span><input name="address" autocomplete="street-address"
+                placeholder="House number, Village name" required></label>
+            <label class="wide"><span class="sr-only">Landmark</span><span class="field-icon" aria-hidden="true"><svg>
+                  <use href="#icon-pin" />
+                </svg></span><input name="landmark" placeholder="Landmark" required></label>
+            <label class="wide"><span class="sr-only">State</span><span class="field-icon" aria-hidden="true"><svg>
+                  <use href="#icon-pin" />
+                </svg></span><select name="state" autocomplete="address-level1" required>
+                <option>Gujarat</option>
+                <option>Andhra Pradesh</option>
+                <option>Assam</option>
+                <option>Bihar</option>
+                <option>Chhattisgarh</option>
+                <option>Delhi</option>
+                <option>Haryana</option>
+                <option>Jharkhand</option>
+                <option>Karnataka</option>
+                <option>Kerala</option>
+                <option>Madhya Pradesh</option>
+                <option>Maharashtra</option>
+                <option>Odisha</option>
+                <option>Punjab</option>
+                <option>Rajasthan</option>
+                <option>Tamil Nadu</option>
+                <option>Telangana</option>
+                <option>Uttar Pradesh</option>
+                <option>Uttarakhand</option>
+                <option>West Bengal</option>
+              </select></label>
+            <label class="wide"><span class="sr-only">Pincode</span><span class="field-icon" aria-hidden="true"><svg>
+                  <use href="#icon-pin" />
+                </svg></span><input name="pin" inputmode="numeric" autocomplete="postal-code" placeholder="Pincode"
+                pattern="[0-9]{6}" maxlength="6" required></label>
+            <label class="wide"><span class="sr-only">City</span><span class="field-icon" aria-hidden="true"><svg>
+                  <use href="#icon-pin" />
+                </svg></span><input name="city" autocomplete="address-level2" placeholder="City" required></label>
+          </div>
+          <button class="screenshot-submit" type="submit" id="submit-order">Complete Order - 499</button>
+          <p class="form-footnote" id="form-note" aria-live="polite"></p>
+        </form>
+      </section>
+    </section>
+    <section class="how detail-how" id="detail-how">
+      <div>
+        <p class="eyebrow">MADE EASY</p>
+        <h2>How to use</h2>
+      </div>
+      <p id="usage"></p>
+    </section>
+  </main>
+  <footer class="legal-footer">
+    <nav aria-label="Policies"><span>Health &amp; Safety Policy</span><span>Claim &amp; Marketing Policy</span></nav>
+    <hr>
+    <p><strong>Disclaimer</strong> Slimofast is not recommended for pregnant women, breastfeeding mothers, or
+      individuals below 18 years of age.<br>Results may vary depending on your body type, diet, lifestyle, and
+      metabolism. Slimo Fast is an Ayurvedic formula designed to support the body naturally by promoting healthy
+      metabolism, digestion, and overall wellness. When combined with a balanced diet and regular use, it may help you
+      feel lighter, more active, and support your weight management goals.</p>
+  </footer>
+  <script src="products.js"></script>
+  <script src="product.js"></script>
+</body>
+
+</html>

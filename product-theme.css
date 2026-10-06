@@ -1,0 +1,37 @@
+:root[data-theme="slimofast"]{--product-accent:#18377f;--product-accent-dark:#10275f;--product-wash:#eaf0ff;--product-background:#f4f6fc;--product-glow:#dbe5ff}
+:root[data-theme="sleepo"]{--product-accent:#542174;--product-accent-dark:#35104f;--product-wash:#f2eafb;--product-background:#faf7fc;--product-glow:#eadcf7}
+.icon-library{display:none}.course-picker>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+body:has(.detail-layout){background:var(--product-background)}
+.site-header{border-color:color-mix(in srgb,var(--product-accent) 12%,transparent)}
+.detail-main{max-width:1050px}
+.detail-layout{gap:58px;padding-top:2px}
+.detail-visual{height:410px;border-radius:16px;background:radial-gradient(ellipse at 50% 65%,#fff 0%,var(--product-glow) 75%);border:1px solid color-mix(in srgb,var(--product-accent) 10%,white);box-shadow:0 18px 50px #14223a0d}
+.detail-visual img{padding:12px;mix-blend-mode:normal}
+.detail-product>.detail-eyebrow{color:var(--product-accent);letter-spacing:.16em}
+.detail-product h1{font-size:43px;color:#1f2937}
+.rating{color:#ba8948}
+.detail-how{border-top:1px solid color-mix(in srgb,var(--product-accent) 14%,white);margin-top:23px}
+.detail-how .eyebrow{color:var(--product-accent)}
+.detail-how h2{color:#263343}
+.detail-order .order-card{position:relative;top:auto;width:min(100%,430px);margin:0 auto;padding:31px 29px 25px;border:1px solid color-mix(in srgb,var(--product-accent) 12%,white);border-radius:20px;box-shadow:0 18px 55px color-mix(in srgb,var(--product-accent) 10%,transparent);overflow:hidden}
+.detail-order .order-card:before{content:'';display:block;height:5px;margin:-31px -29px 25px;background:linear-gradient(90deg,var(--product-accent-dark),var(--product-accent),color-mix(in srgb,var(--product-accent) 42%,white))}
+.screenshot-form-heading{margin-bottom:23px}
+.screenshot-form-heading h2{font:700 25px/1.25 'DM Sans',sans-serif;color:#202b3b;letter-spacing:-.5px}
+.screenshot-form-heading p{font-size:13px;letter-spacing:.03em;color:#778092;margin-top:7px}
+.detail-order .course-select-label,.detail-order .form-grid label{height:51px;margin-bottom:12px;border:1px solid #dce1eb;border-radius:10px;background:#fff;transition:border-color .18s,box-shadow .18s}
+.detail-order .course-select-label:focus-within,.detail-order .form-grid label:focus-within{border-color:var(--product-accent);box-shadow:0 0 0 3px var(--product-wash)}
+.course-picker{position:relative;z-index:3;margin:0 0 14px}.course-picker.is-open{z-index:8}.course-picker-trigger{position:relative;display:flex;align-items:center;width:100%;height:53px;padding:0 15px 0 0;border:1px solid #dce1eb;border-radius:10px;background:#fff;color:#354052;text-align:left;cursor:pointer;transition:border-color .18s,box-shadow .18s}.course-picker-trigger:hover,.course-picker.is-open .course-picker-trigger{border-color:var(--product-accent);box-shadow:0 0 0 3px var(--product-wash)}.course-picker-trigger:disabled{cursor:not-allowed;color:#8992a2}.course-picker-trigger .field-icon{position:relative;left:auto;top:auto;flex:none;height:100%;margin-right:13px;border-radius:9px 0 0 9px}.course-selected{font-size:13px;font-weight:600;letter-spacing:.005em}.course-chevron{width:17px;height:17px;margin-left:auto;fill:none;stroke:#727d8d;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:transform .18s}.course-picker.is-open .course-chevron{transform:rotate(180deg)}.course-menu{position:absolute;top:calc(100% + 8px);left:0;right:0;padding:7px;background:#fff;border:1px solid #e2e6ef;border-radius:13px;box-shadow:0 14px 32px color-mix(in srgb,var(--product-accent) 16%,transparent);z-index:12;animation:course-menu-in .14s ease-out}.course-menu[hidden]{display:none}.course-option{display:flex;align-items:center;gap:12px;min-height:62px;padding:8px 10px;border-radius:8px;color:#344052;cursor:pointer;outline:none;transition:background .15s,color .15s}.course-option+.course-option{margin-top:3px}.course-option:hover,.course-option:focus-visible{background:var(--product-wash)}.course-option[aria-selected="true"]{background:var(--product-wash)}.course-option-duration{width:39px;height:41px;flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:7px;background:#fff;color:var(--product-accent)}.course-option-duration strong{font-size:15px;line-height:16px}.course-option-duration small{font-size:7px;font-weight:700;letter-spacing:.08em}.course-option-copy{display:flex;flex-direction:column;gap:4px;min-width:0}.course-option-copy strong{font-size:12px;font-weight:600}.course-option-copy small{font-size:10px;color:#8992a2}.course-option-price{margin-left:auto;color:var(--product-accent);font-size:14px;font-weight:700;white-space:nowrap}.course-option[aria-selected="true"] .course-option-price{color:var(--product-accent-dark)}.detail-order .order-card{overflow:visible}.detail-order .order-card:before{border-radius:20px 20px 0 0}@keyframes course-menu-in{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.detail-order .field-icon{width:46px;background:var(--product-wash);border-right:1px solid color-mix(in srgb,var(--product-accent) 10%,white);color:var(--product-accent)}
+.detail-order .field-icon svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.detail-order .form-grid input,.detail-order .form-grid select,.detail-order #courses{font-family:'DM Sans',sans-serif;font-size:13px;color:#354052}
+.detail-order .form-grid input::placeholder{color:#8992a2}
+.detail-order .form-grid label:nth-child(3){margin-top:12px}
+.detail-order .screenshot-submit{height:52px;margin-top:7px;border-radius:9px;background:linear-gradient(135deg,var(--product-accent),var(--product-accent-dark));box-shadow:0 4px 0 color-mix(in srgb,var(--product-accent-dark) 85%,black);font-size:13px;letter-spacing:.04em;transition:filter .18s,transform .18s}
+.detail-order .screenshot-submit:hover:not(:disabled){background:linear-gradient(135deg,var(--product-accent),var(--product-accent-dark));filter:brightness(1.08);transform:translateY(-1px)}
+.detail-order .screenshot-submit:disabled{background:#a8aeba;box-shadow:0 4px 0 #929aa8}
+.back-link{color:var(--product-accent);font-weight:600}
+.product-card[data-theme="slimofast"] .product-visual{background:linear-gradient(145deg,#e8efff,#d7e3ff)}
+.product-card[data-theme="sleepo"] .product-visual{background:linear-gradient(145deg,#f3eafd,#e7d7f3)}
+.product-card[data-theme="slimofast"] .pill{color:#18377f}
+.product-card[data-theme="sleepo"] .pill{color:#542174}
+@media(max-width:700px){.detail-layout{gap:27px}.detail-visual{height:340px}.detail-order .order-card{width:min(100%,460px);padding:27px 22px 23px}.detail-order .order-card:before{margin:-27px -22px 23px}}

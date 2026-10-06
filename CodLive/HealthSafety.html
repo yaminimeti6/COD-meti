@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health & Safety Instructions</title>
+  <style>
+    body {
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      background: #f7f9fc;
+      color: #3f4758;
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    .site-header {
+      position: relative;
+      z-index: 10;
+      background: transparent;
+    }
+    .announcement-bar {
+      display: grid;
+      grid-template-columns: 44px 1fr 44px;
+      align-items: center;
+      min-height: 64px;
+      padding: 0 18px;
+      background: #054f50;
+      color: #fff;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .announcement-text {
+      text-align: center;
+    }
+    .arrow-btn {
+      display: grid;
+      place-items: center;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: #fff;
+    }
+    .nav-bar {
+      background: #ffffff;
+      border-bottom: 1px solid rgba(20, 32, 59, 0.08);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 96px;
+      padding: 0 22px;
+    }
+    .brand-home {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .brand-logo {
+      width: auto;
+      height: 82px;
+      max-width: min(44vw, 230px);
+      object-fit: contain;
+    }
+    .section {
+      max-width: 920px;
+      margin: 2rem auto;
+      padding: 0 1rem 2rem;
+    }
+    h1 {
+      color: #0d4b4b;
+      font-size: 2.1rem;
+      font-weight: 700;
+      text-align: center;
+      margin: 0 0 0.75rem;
+    }
+    .intro {
+      max-width: 760px;
+      margin: 0 auto 1.75rem;
+      text-align: center;
+      font-size: 1rem;
+      color: #5f6677;
+    }
+    .content-card {
+      background: #ffffff;
+      border: 1px solid #e4e8f0;
+      border-radius: 24px;
+      padding: 1.6rem 1.3rem;
+      box-shadow: 0 16px 40px rgba(26, 40, 69, 0.08);
+    }
+    .rule {
+      margin: 0;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid #edf0f5;
+    }
+    .rule:first-child {
+      padding-top: 0;
+    }
+    .rule:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+    h2 {
+      margin: 0 0 0.65rem;
+      font-size: 1.1rem;
+      color: #152242;
+    }
+    p {
+      font-size: 0.98rem;
+      margin: 0.6rem 0 0;
+    }
+    ul {
+      margin: 0.75rem 0 0;
+      padding-left: 1.2rem;
+    }
+    li {
+      margin: 0.35rem 0;
+      font-size: 0.97rem;
+    }
+    strong {
+      color: #0f1629;
+    }
+    .note-card {
+      margin-top: 1.4rem;
+      padding: 1.2rem 1.15rem;
+      border-radius: 18px;
+      background: #f4f8f7;
+      border: 1px solid #dfe8e5;
+    }
+    .note-card h2 {
+      color: #0d4b4b;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem 2rem;
+      border-top: 1px solid #e5e7eb;
+      font-size: 0.92rem;
+      color: #6b7280;
+      background: #ffffff;
+    }
+    a {
+      color: #166534;
+      text-decoration: none;
+    }
+    @media (max-width: 640px) {
+      .announcement-bar {
+        min-height: 56px;
+        padding: 0 10px;
+        font-size: 0.92rem;
+      }
+      .header-inner {
+        min-height: 80px;
+        padding: 0 16px;
+      }
+      .brand-logo {
+        height: 64px;
+        max-width: 170px;
+      }
+      .section {
+        margin: 1.25rem auto;
+        padding: 0 0.75rem 1.5rem;
+      }
+      h1 {
+        font-size: 1.75rem;
+      }
+      .content-card {
+        padding: 1.2rem 1rem;
+        border-radius: 18px;
+      }
+      h2 {
+        font-size: 1.02rem;
+      }
+      p,
+      li,
+      .intro {
+        font-size: 0.94rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="announcement-bar">
+      <button class="arrow-btn" type="button" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="28" height="28">
+          <path d="M15 18l-6-6 6-6"/>
+        </svg>
+      </button>
+      <div class="announcement-text">Free Shipping on Combo Packs 🚚</div>
+      <button class="arrow-btn" type="button" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="28" height="28">
+          <path d="M9 6l6 6-6 6"/>
+        </svg>
+      </button>
+    </div>
+    <div class="nav-bar">
+      <div class="header-inner">
+        <a class="brand-home" href="index.html" aria-label="Back to home">
+          <img src="logoNww.avif" alt="Meti logo" class="brand-logo">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <h1>Health &amp; Safety Instructions</h1>
+    <p class="intro">
+      your safety is important to us.
+      Please read the following instructions carefully before using any of our products.
+    </p>
+
+    <div class="content-card">
+      <div class="rule">
+        <h2>1. Medical Consultation</h2>
+        <p>Consult a qualified healthcare professional before use if you are:</p>
+        <ul>
+          <li>Pregnant or nursing</li>
+          <li>Planning to conceive</li>
+          <li>Suffering from any medical condition, including but not limited to heart disease, high blood pressure, diabetes, thyroid disorders, liver or kidney conditions</li>
+          <li>Taking prescription medications, especially blood thinners, antidepressants, stimulants, hormone therapy, or diabetes medication</li>
+        </ul>
+        <p>Individuals with known allergies or sensitivities should carefully review ingredient lists before use.</p>
+      </div>
+
+      <div class="rule">
+        <h2>2. Recommended Usage</h2>
+        <ul>
+          <li>Use only as directed on the product label.</li>
+          <li>Do not exceed the recommended dosage.</li>
+          <li>Overconsumption may cause adverse effects.</li>
+        </ul>
+      </div>
+
+      <div class="rule">
+        <h2>3. Age Restriction</h2>
+        <p>Not intended for individuals under 18 years of age unless specifically advised by a qualified healthcare professional.</p>
+      </div>
+
+      <div class="rule">
+        <h2>4. Allergen Warning</h2>
+        <ul>
+          <li>Please review the ingredient list carefully before use.</li>
+          <li>If you have known allergies, consult your doctor prior to consumption.</li>
+          <li>Products may contain or be manufactured in facilities that handle common allergens.</li>
+        </ul>
+      </div>
+
+      <div class="rule">
+        <h2>5. Possible Side Effects</h2>
+        <p>Discontinue use immediately and consult a healthcare professional if you experience:</p>
+        <ul>
+          <li>Rapid heartbeat</li>
+          <li>Shortness of breath</li>
+          <li>Severe headache</li>
+          <li>Rash or allergic reaction</li>
+          <li>Dizziness</li>
+          <li>Nausea or unusual discomfort</li>
+          <li>Any unexpected symptoms</li>
+        </ul>
+      </div>
+
+      <div class="rule">
+        <h2>6. Storage Instructions</h2>
+        <ul>
+          <li>Store in a cool, dry place.</li>
+          <li>Keep away from direct sunlight and moisture.</li>
+          <li>Keep out of reach of children and pets.</li>
+          <li>Do not use if the seal is broken or damaged.</li>
+        </ul>
+      </div>
+
+      <div class="note-card">
+        <h2>Important Medical Disclaimer</h2>
+        <p>Our products are wellness supplements and are not intended to diagnose, treat, cure, or prevent any disease unless specifically permitted under applicable laws.</p>
+        <p><strong>Results may vary from person to person.</strong></p>
+        <p>Information provided on our website is for general informational purposes only and should not replace professional medical advice.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <a href="ClaimMarketing.html">Claims & Marketing Compliance</a> |
+    <a href="index.html">Back to Home</a>
+  </footer>
+</body>
+</html>

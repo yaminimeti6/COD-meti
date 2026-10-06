@@ -1,0 +1,396 @@
+.product-card {
+    display: block;
+    text-decoration: none
+}
+
+.setup-note {
+    font-size: 11px;
+    color: var(--muted);
+    padding: 5px 0
+}
+
+.detail-main {
+    min-height: 70vh
+}
+
+.back-link {
+    display: inline-block;
+    margin: 27px 0 20px;
+    color: var(--muted);
+    font-size: 12px;
+    text-decoration: none
+}
+
+.back-link:hover {
+    color: var(--green)
+}
+
+.detail-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 54px;
+    align-items: start;
+    padding-bottom: 65px
+}
+
+.detail-visual {
+    height: 390px;
+    background: #f0e9dc;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+    overflow: hidden
+}
+
+.detail-visual img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    padding: 20px;
+    mix-blend-mode: multiply
+}
+
+.detail-visual .visual-placeholder span {
+    font-size: 32px
+}
+
+.detail-product>.detail-eyebrow {
+    margin: 24px 0 8px;
+    color: #a46c4d;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .15em
+}
+
+.detail-product h1 {
+    font: 500 38px 'Playfair Display', serif;
+    margin: 0
+}
+
+.rating {
+    color: #b37845;
+    font-size: 12px;
+    margin: 9px 0
+}
+
+.detail-how {
+    margin-top: 25px;
+    padding: 20px 0;
+    border-bottom: 0
+}
+
+.detail-how>p {
+    font-size: 12px
+}
+
+.detail-order {
+    padding-top: 0
+}
+
+.detail-order .order-card {
+    position: sticky;
+    top: 20px
+}
+
+.detail-order .courses {
+    flex-direction: column;
+    align-items: stretch
+}
+
+.detail-order .course-btn {
+    text-align: left;
+    font-size: 12px
+}
+
+.detail-order .form-grid {
+    grid-template-columns: 1fr 1fr
+}
+
+.detail-order .form-grid .wide {
+    grid-column: 1/-1
+}
+
+.detail-order .form-footnote {
+    font-size: 10px
+}
+
+.detail-layout .how {
+    border-top: 1px solid var(--line)
+}
+
+@media(max-width:700px) {
+    .detail-layout {
+        grid-template-columns: 1fr;
+        gap: 27px;
+        padding-bottom: 48px
+    }
+
+    .detail-visual {
+        height: 310px
+    }
+
+    .detail-order .order-card {
+        position: static
+    }
+
+    .back-link {
+        margin-top: 20px
+    }
+
+    .detail-product h1 {
+        font-size: 32px
+    }
+}
+
+@media(max-width:430px) {
+    .products {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .product-visual {
+        height: 170px
+    }
+
+    .product-name {
+        font-size: 16px
+    }
+
+    .product-info {
+        padding: 12px 10px
+    }
+
+    .product-desc {
+        font-size: 9px
+    }
+
+    .product-arrow {
+        font-size: 15px
+    }
+
+    .pill {
+        font-size: 7px;
+        left: 8px;
+        top: 8px;
+        padding: 6px 8px
+    }
+
+    .detail-visual {
+        height: 260px
+    }
+}
+
+/* Keep the image frame fixed while fitting each complete product artwork inside it. */
+.product-visual img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain !important;
+    object-position: center;
+    padding: 10px;
+    mix-blend-mode: normal
+}
+
+/* COD form styled to match the supplied Slimofast order form screenshot. */
+body:has(.detail-layout) {
+    background: #e6ecfa
+}
+
+.detail-order .order-card {
+    position: relative;
+    top: auto;
+    width: min(100%, 410px);
+    margin: 0 auto;
+    background: #fff;
+    border: 0;
+    border-radius: 25px;
+    padding: 24px 19px 19px;
+    box-shadow: 0 14px 32px #26395612
+}
+
+.screenshot-form-heading {
+    text-align: center;
+    margin-bottom: 20px
+}
+
+.screenshot-form-heading h2 {
+    font: 700 27px/1.2 'DM Sans', sans-serif;
+    letter-spacing: -.7px;
+    color: #073f48;
+    margin: 0
+}
+
+.screenshot-form-heading p {
+    font: 400 16px 'DM Sans', sans-serif;
+    letter-spacing: .04em;
+    color: #172b3f;
+    margin: 9px 0 0
+}
+
+.detail-order .course-select-label,
+.detail-order .form-grid label {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 52px;
+    margin: 0 0 13px;
+    padding: 0;
+    border: 1px solid #cbd4e3;
+    border-radius: 11px;
+    background: #fff;
+    overflow: hidden
+}
+
+.detail-order .course-select-label {
+    margin-bottom: 13px
+}
+
+.detail-order .field-icon {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 44px;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background: #eeeeef;
+    border-right: 1px solid #d6dce6;
+    color: #333;
+    font-size: 16px
+}
+
+.detail-order .form-grid {
+    display: block
+}
+
+.detail-order .form-grid label .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0
+}
+
+.detail-order .form-grid input,
+.detail-order .form-grid select,
+.detail-order #courses {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    padding: 0 13px 0 56px;
+    color: #172b3f;
+    font: 14px 'DM Sans', sans-serif;
+    outline: none
+}
+
+.detail-order #courses {
+    appearance: none;
+    padding-right: 40px;
+    cursor: pointer
+}
+
+.detail-order .course-select-label:after {
+    content: '';
+    position: absolute;
+    right: 17px;
+    top: 18px;
+    width: 9px;
+    height: 9px;
+    border-right: 2px solid #263238;
+    border-bottom: 2px solid #263238;
+    transform: rotate(45deg);
+    pointer-events: none
+}
+
+.detail-order .form-grid input:focus,
+.detail-order .form-grid select:focus,
+.detail-order #courses:focus {
+    outline: 2px solid #325fe9;
+    outline-offset: -2px
+}
+
+.detail-order .form-grid input::placeholder {
+    color: #78818e;
+    opacity: 1
+}
+
+.detail-order .form-grid select {
+    appearance: none;
+    cursor: pointer
+}
+
+.detail-order .form-grid label:has(select):after {
+    content: '';
+    position: absolute;
+    right: 17px;
+    top: 18px;
+    width: 9px;
+    height: 9px;
+    border-right: 2px solid #263238;
+    border-bottom: 2px solid #263238;
+    transform: rotate(45deg);
+    pointer-events: none
+}
+
+.detail-order .screenshot-submit {
+    width: 100%;
+    height: 54px;
+    margin-top: 9px;
+    border: 0;
+    border-radius: 11px;
+    background: #36b928;
+    color: white;
+    font: 800 15px 'DM Sans', sans-serif;
+    box-shadow: 0 5px 0 #218c1c;
+    cursor: pointer
+}
+
+.detail-order .screenshot-submit:hover:not(:disabled) {
+    background: #2aa91f
+}
+
+.detail-order .screenshot-submit:disabled {
+    background: #9ead9c;
+    box-shadow: 0 5px 0 #82917e;
+    cursor: not-allowed
+}
+
+.detail-order .form-footnote {
+    margin: 13px 0 0;
+    text-align: center;
+    color: #697385;
+    font-size: 11px
+}
+
+.detail-order .form-grid label:nth-child(3) {
+    margin-top: 31px
+}
+
+@media(max-width:700px) {
+    .detail-layout {
+        grid-template-columns: 1fr;
+        gap: 26px
+    }
+
+    .detail-order .order-card {
+        position: relative
+    }
+
+    .detail-order {
+        padding: 0
+    }
+
+    .detail-visual {
+        height: 310px
+    }
+}
